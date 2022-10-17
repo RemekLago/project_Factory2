@@ -13,4 +13,12 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Theme.ButtonGreen" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="colorPrimary">#57c885</item>
+    </style>
+    <style name="Theme.ButtonGrey" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="colorPrimary">#C0C0C0</item>
+    </style>
+
 </resources>

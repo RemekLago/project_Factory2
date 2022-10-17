@@ -2,4 +2,27 @@
     <string name="app_name">projectTech_v4</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="operator">
+        <item>Jan Brzechwa</item>
+        <item>Mikołaj Kopernik</item>
+        <item>Adam Mickiewicz</item>
+    </string-array>
+
+    <string-array name="data">
+        <item>1.01.2023</item>
+        <item>2.01.2023</item>
+        <item>3.01.2023</item>
+    </string-array>
+
+
+    <string-array name="godzina_zmiany">
+        <item>08:00 - 16:00</item>
+        <item>16:00 - 00:00</item>
+        <item>00:00 - 08:00</item>
+    </string-array>
+
+
+
 </resources>

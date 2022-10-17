@@ -7,16 +7,53 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spinner1_operator"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/spinner2_data"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/spinner3_godzina"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_zatwierdz_operator"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Zatwierdź"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+
+
+    </TableRow>
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        app:tabMode="scrollable"
         app:tabGravity="fill"
-        app:tabIndicatorGravity="stretch"
-        app:tabSelectedTextColor="@color/white"
         app:tabIndicatorAnimationMode="elastic"
-        />
+        app:tabIndicatorGravity="stretch"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/white" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager2"

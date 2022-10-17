@@ -32,10 +32,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_marginLeft="6dp"
-                android:layout_marginRight="6dp"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:text="Maszyna01_128346488244"
+                android:background="#F5F5F5"
                 android:textAlignment="center" />
         </TableRow>
 
@@ -57,7 +56,7 @@
                 android:layout_weight="2"
                 android:text="stan maszyny"
                 android:gravity="center"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:textColor="@color/white"/>
 
             <RadioGroup
@@ -80,7 +79,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:checked="true"
+                    android:checked="false"
                     android:text="NIE" />
             </RadioGroup>
         </TableRow>
@@ -103,7 +102,7 @@
                 android:layout_weight="2"
                 android:text="obsługa operator"
                 android:gravity="center"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:textColor="@color/white"/>
 
             <RadioGroup
@@ -126,7 +125,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:checked="true"
+                    android:checked="false"
                     android:text="NIE" />
             </RadioGroup>
         </TableRow>
@@ -149,7 +148,7 @@
                 android:layout_weight="2"
                 android:text="zlecenia"
                 android:gravity="center"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:textColor="@color/white"/>
 
             <RadioGroup
@@ -172,7 +171,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:checked="true"
+                    android:checked="false"
                     android:text="NIE" />
             </RadioGroup>
         </TableRow>
@@ -195,7 +194,7 @@
                 android:layout_weight="2"
                 android:text="zlecenia"
                 android:gravity="center"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:textColor="@color/white"/>
 
             <RadioGroup
@@ -218,7 +217,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:checked="true"
+                    android:checked="false"
                     android:text="NIE" />
             </RadioGroup>
         </TableRow>
@@ -241,7 +240,7 @@
                 android:layout_weight="2"
                 android:text="materiały"
                 android:gravity="center"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:textColor="@color/white"/>
 
             <RadioGroup
@@ -264,7 +263,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:checked="true"
+                    android:checked="false"
                     android:text="NIE" />
             </RadioGroup>
         </TableRow>
@@ -287,7 +286,7 @@
                 android:layout_weight="2"
                 android:text="materiały"
                 android:gravity="center"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:textColor="@color/white"/>
 
             <RadioGroup
@@ -310,7 +309,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:checked="true"
+                    android:checked="false"
                     android:text="NIE" />
             </RadioGroup>
         </TableRow>
@@ -322,10 +321,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Zatwierdź zmiany"
+        android:background = "@drawable/roundedbuttonzatwierdz"
+        android:theme="@style/Theme.ButtonGreen"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-
         app:layout_constraintTop_toBottomOf="@+id/tableLayout1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
