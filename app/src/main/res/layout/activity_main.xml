@@ -8,30 +8,44 @@
     tools:context=".MainActivity">
 
     <TableRow
+        android:id="@+id/tableRow_operator"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="6dp"
         android:layout_marginRight="6dp"
+        android:background="#F5F5F5"
         android:orientation="vertical">
 
         <Spinner
             android:id="@+id/spinner1_operator"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="4" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow_data"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:orientation="vertical"
+        android:background="#F5F5F5"
+        android:weightSum="5">
 
         <Spinner
             android:id="@+id/spinner2_data"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="2" />
 
         <Spinner
             android:id="@+id/spinner3_godzina"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="2" />
 
         <Button
             android:id="@+id/button_zatwierdz_operator"
@@ -41,19 +55,21 @@
             android:textSize="11sp"
             android:textColor="@color/black"
             android:layout_weight="1"/>
-
-
     </TableRow>
+
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginTop="5dp"
         app:tabGravity="fill"
         app:tabIndicatorAnimationMode="elastic"
         app:tabIndicatorGravity="stretch"
         app:tabMode="scrollable"
-        app:tabSelectedTextColor="@color/white" />
+        app:tabSelectedTextColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow_data"
+        />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager2"
