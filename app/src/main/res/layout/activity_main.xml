@@ -53,6 +53,7 @@
             android:layout_height="wrap_content"
             android:text="Zatwierdź"
             android:textSize="11sp"
+            android:background="#0055c9"
             android:textColor="@color/black"
             android:layout_weight="1"/>
     </TableRow>
